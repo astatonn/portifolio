@@ -6,6 +6,8 @@
     --third-font: 'Merriweather', serif;
     --main-gradient: linear-gradient(0.25turn, #6833e4, #734bd1, #8257e5, #6833e4);
     --second-gradient: linear-gradient(0deg, #ccc, #fff 100%, #ccc);
+    --radial-gradient: radial-gradient( #6833e4, #734bd1, #8257e5, #6833e4);
+    --border-purple: 2px solid #6833e4;
 }
 
 .container {
@@ -40,6 +42,8 @@
     width: 40vw;
     height: 10vh;
     background-image: var(--second-gradient);
+    box-shadow: 10px 5px rgba(0, 0, 12, 0.5);
+    
 }
 
 .navigation-header ul {
@@ -49,33 +53,82 @@
     justify-content: space-around;
     align-items: center;
     height: 10vh;
+    
    
 }
 
 .navigation-header ul li {
-    border-bottom: 2px solid #6833e4;
+    border-bottom: var(--border-purple);
     padding-bottom: 10px;
     font-family: var(--first-font);
 }
 
 .main-aside-content {
     height: 90vh;
-    background-color: white;
+    background-image: var(--second-gradient);
     display: grid;
     grid-template-rows: 2fr 5fr 1fr;
-    height: 90vh;
+    align-items: center;
+    justify-content: center;
 }
 
 .text-container-top {
-    align-self: center;
-    justify-content: center;
     grid-row: 1/2;
     font-family: var(--first-font);
 }
 
+/* TOP ASIDE CONTENT */
+
 .my-name {
     font-size: 4rem;
+    width: 20vw;
+    margin-top: 40px;
+    padding-bottom: 10px;
+    border-bottom: var(--border-purple);
 }
+
+.my-function {
+    text-align: right;
+    font-weight: 200;
+    font-style: italic;
+    font-family: var(--second-font);
+}
+
+/* IMAGE ASIDE CONTENT */
+
+.image-aside-container {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    justify-self: center;
+    grid-row: 2/3;
+    background-image: url('../img/eu.jfif'), var(--radial-gradient) ;
+    background-repeat: no-repeat;
+    background-blend-mode: hard-light;
+    background-size: contain;
+    border-radius: 15px;
+}
+
+
+
+/* FOOTER ASIDE CONTENT */
+.footer-aside-container {
+    font-family: var(--second-font);
+    grid-row: 3/4;
+}
+
+
+.footer-title{
+    text-align: center;
+    font-weight: 400;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
 
 /* CONTATO */
 
