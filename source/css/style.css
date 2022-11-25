@@ -14,17 +14,106 @@
     background-color: antiquewhite;
     height: 300vh;
     display: flex;
+    color: #16161f;
 }
 
 /* LADO ESQUERDO */
 
+/* HOME */
 .main-content {
-    background-color: teal;
     width: 60vw;
 }
 
 .content {
     height: 100vh;
+}
+
+.element1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url('../img/einstein.png'), var(--main-gradient);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    color: var(--first-color);
+}
+
+.quote-citation {
+    font-size: 4rem;
+    width: 40vw;
+    text-align: justify;
+    font-style: italic;
+    font-family: var(--third-font);
+    font-weight: 400;
+}
+
+.author-quote {
+    text-align: right;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 300;
+}
+
+
+.footer-first-section {
+    padding-top: 20vh;
+    font-family: var(--third-font);
+}
+
+/* ABOUT */
+
+.about {
+    background-image: var(--second-gradient);
+}
+
+.about-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+.about-main-content {
+    width: 30vw;
+    margin: 20px;
+}
+
+.float-left {
+    float: left;
+    margin-right: 20px;
+}
+
+.about-content {
+    text-align: justify;
+    font-size: 20px;
+    font-family: var(--first-font);
+}
+
+.float-right {
+    float: right;
+    margin-left: 20px;
+}
+
+.about-me-title {
+    font-size: 4rem;
+    font-family: var(--first-font);
+    background-color: var(--second-gradient);
+}
+
+.about-title {
+    border-bottom: var(--border-purple);
+    padding-left: 5vw;
+    padding-top: 30px;
+}
+
+.image-fill {
+    width: 200px;
+    height: 150px;
+    background-color: red;
+    border-radius: 15px;
 }
 
 
@@ -36,6 +125,7 @@
     height: 100vh;
     position: fixed;
     right: 0;
+    box-shadow: -5px 0 15px #16161f;
 }
 
 .header-aside-content {
@@ -59,7 +149,7 @@
 
 .navigation-header ul li {
     border-bottom: var(--border-purple);
-    padding-bottom: 10px;
+    padding: 0 10px 10px;
     font-family: var(--first-font);
 }
 
@@ -99,12 +189,11 @@
 .image-aside-container {
     width: 300px;
     height: 300px;
-    background-color: red;
     justify-self: center;
     grid-row: 2/3;
     background-image: url('../img/eu.jfif'), var(--radial-gradient) ;
     background-repeat: no-repeat;
-    background-blend-mode: hard-light;
+    background-blend-mode: overlay;
     background-size: contain;
     border-radius: 15px;
 }
