@@ -116,6 +116,44 @@
     border-radius: 15px;
 }
 
+.portifolio {
+    background-image: var(--main-gradient);
+}
+
+.portifolio-title {
+    font-size: 4rem;
+    font-family: var(--first-font);
+}
+
+.portifilio-header {
+    border-bottom: 2px solid white;
+    padding-left: 5vw;
+    padding-top: 30px;
+    color: white;
+
+}
+
+.portifolio-content {
+    margin-top: 70px;
+    width: 55vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    width: 200px;
+    height: 200px;
+}
+
+.cor1{
+    background-color: wheat;
+}
+
+.cor2 {
+    background-color: limegreen;
+}
 
 /* LADO DIREITO */
 
@@ -226,8 +264,7 @@
     right: 0;
     width: 40vw;
     z-index: 10;
-    margin-top: 200vh;
+    margin-top: 210vh;
     background-color: aquamarine;
     margin-left: -15px;
 }
-
